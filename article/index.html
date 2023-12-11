@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="property/FibonacciObfuscate.js"></script>
+    <title>blog msytc</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>msytc blog</span>
+            <ul>
+                <li><a href="#penulis">penulis</a></li>
+                <li><a href="#article">artikel</a></li>
+                <li><a href="https://msytc.vercel.app" target="_blank">portofolio</a></li>
+            </ul>
+            <section class="menu">
+              <section class="icon"></section>
+              <input type="checkbox" class="checkbox"/>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <aside id="penulis">
+            <h3>profil penulis</h3>
+            <img src="property/solehuddin.png" alt="solehuddin">
+            <section>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>nama</th>
+                            <td>:</td>
+                            <td>Moh. Solehuddin</td>
+                        </tr>
+                        <tr>
+                            <th>umur</th>
+                            <td>:</td>
+                            <td>18 tahun</td>
+                        </tr>
+                        <tr>
+                            <th>sekolah</th>
+                            <td>:</td>
+                            <td>SMKN 1 SUBOH SITUBONDO</td>
+                        </tr>
+                        <tr>
+                            <th>kelas</th>
+                            <td>:</td>
+                            <td>12 TKJ 1</td>
+                        </tr>
+                        <tr>
+                            <th>hobi</th>
+                            <td>:</td>
+                            <td>coding</td>
+                        </tr>
+                        <tr>
+                            <th>status</th>
+                            <td>:</td>
+                            <td>single</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </aside>
+        <article id="article">
+            <h1>Apa itu Obfuscatiion ?</h1>
+            <p class="content">Obfuscatiion adalah salah satu teknik untuk mengamankan kode agar tidak mudah di reverse engginering dan mencegah seseorang mencuri hak kekayaan intelektual serta menghindari hacker untuk memahami kode kita. Obfuscatiion  sendiri berkerja dengan cara mengkaburkan kode yang awalnya mudah di baca menjadi sulit di pahami.</p>
+            <h2>Berikut contoh kode yang telah di obfuscate.</h2>
+            <section class="imgObfuscate img content"></section>
+            <a href="property/FibonacciObfuscate.js" class="download">lihat kode</a>
+            <h2>Berikut contoh kode asli dari kode di atas</h2>
+            <section class="img imgNotObfuscate content"></section>
+            <a href="property/Fibonacci.js" class="download">lihat kode</a>
+            <p class="content">kedua kode di atas sama sama menghasilkan output berupa array yaitu [0,1,2,3,4,5] karena karena kedua kode di atas sama sama memerintahkan untuk menampilkan bilangan fibonaci dari range 0 samnpai 5</p>
+            <h2>Rekomendasi tools obfuscate</h2>
+            <p>
+                salah satu tools obfuscation untuk javascript adalah
+                <a href="http://obfuscator.io" target="_blank" rel="noopener noreferrer">obfuscator.io</a>.
+                untuk tools obfuscation lainnya bisa kalian serching sendiri di internet.
+            </p>
+        </article>
+    </main>
+    <footer class="medsos">
+      <section class="medsos">
+        <a class="instagram" href="https://instagram.com/moh.solehuddin001" about="_blank" ><img src="./icon/instagram.svg" alt="instagram logo" /></a>
+        <a class="youtube" href="https://youtube.com/@msytc-code" about="_blank"><img src="./icon/youtube.svg" alt="youtube logo" /></a>
+        <a class="tiktok" href="https://vm.tiktok.com/ZSNM8ctvS" about="_blank"><img src="./icon/tiktok.svg" alt="tiktok logo" /></a>
+        <a class="github" href="https://github.com/MohSolehuddin" about="_blank"><img src="./icon/github.svg" alt="github logo" /></a>
+      </section>
+    </footer>
+    <script type="text/javascript" charset="utf-8">
+      const menu = document.querySelector('.menu input.checkbox');
+      const nav = document.querySelector('nav ul');
+      menu.addEventListener('click',function() {
+        nav.classList.toggle('slide');
+      });
+    </script>
+</body>
+</html>
